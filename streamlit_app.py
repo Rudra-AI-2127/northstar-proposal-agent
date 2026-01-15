@@ -56,7 +56,7 @@ if next_step != "generate":
 
     if st.button("Submit"):
         st.session_state.memory[next_step] = user_input
-        st.experimental_rerun()
+        st.rerun()
 else:
     st.success("All required context gathered.")
     st.markdown(generate_proposal(st.session_state.memory))

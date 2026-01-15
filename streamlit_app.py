@@ -4,7 +4,7 @@ st.set_page_config(page_title="Northstar Proposal Agent", layout="centered")
 
 st.info("Simulated Microsoft 365 Copilot Agent for Northstar Enterprises")
 
-st.title("🤖 Sales Proposal AI Agent")
+st.title("Sales Proposal AI Agent")
 
 # -------- AGENT MEMORY --------
 if "memory" not in st.session_state:
@@ -26,7 +26,7 @@ def decide_next_step(memory):
 # -------- AGENT TOOLS --------
 def generate_proposal(memory):
     return f"""
-### 📄 Sales Proposal Draft
+### Sales Proposal Draft
 
 **Client:** {memory['client_name']}  
 **Industry:** {memory['industry']}  
@@ -41,7 +41,7 @@ This proposal is designed to improve efficiency, scalability, and collaboration 
 
 def internal_notes():
     return """
-### 🧠 Internal Coordination Notes
+### Internal Coordination Notes
 - CRM context reviewed (simulated)
 - Pricing checked against approval rules
 - Proposal template selected automatically
